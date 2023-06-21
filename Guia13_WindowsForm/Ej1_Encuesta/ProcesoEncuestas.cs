@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ej1_Encuesta
 {
-    class ProcesoEncuestas
+    public class ProcesoEncuestas
     {
         Encuesta[] contactables;
         public int CantContactables { get; private set; }
@@ -72,26 +72,28 @@ namespace Ej1_Encuesta
         {
             Encuesta buscado = null;
             if (idx >= 0 && idx < CantContactables)
+            {
                 buscado = contactables[idx];
+            }
             return buscado;
         }
 
-        public void OrdernarContactables()
+        public void OrdernarEncuestables()
         {
             QuickSort(contactables, 0, CantContactables - 1);
         }
 
         void QuickSort(Encuesta[] lista, int inicio, int fin)
         {
-            if (fin > inicio)
+            if (fin >= inicio)
             {
-                #region particion
+                //partición
                 Encuesta p = lista[inicio];
                 int m = inicio + 1;
                 int n = fin;
                 Encuesta aux;
 
-                while (m <= n)
+                while (m <= n)//hasta que se crucen
                 {
                     while (m <= fin && p.DistanciaASuDestino >= lista[m].DistanciaASuDestino) m++;
                     while (n > inicio && p.DistanciaASuDestino <= lista[n].DistanciaASuDestino) n--;
@@ -105,7 +107,7 @@ namespace Ej1_Encuesta
                 }
                 lista[inicio] = lista[n];
                 lista[n] = p;
-                #endregion
+                //fin partición
 
                 if (inicio < n - 1)
                     QuickSort(lista, inicio, n - 1);

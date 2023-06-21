@@ -33,6 +33,7 @@ namespace Ej2_colectivo
 
         int hInicio;
         int mInicio;
+
         int hLLegada;
         int mLLegada;
         private int DuracionViajeEnM 
