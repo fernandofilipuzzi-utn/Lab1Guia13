@@ -25,11 +25,27 @@ namespace Ej2_colectivo
             int hInicio = Convert.ToInt32(tbHInicio.Text);
             int mInicio = Convert.ToInt32(tbMInicio.Text);
             int asientos = Convert.ToInt32(tbAsientos.Text);
-            viaje = new Viaje(hInicio,mInicio,asientos);
 
-            gbParadas.Enabled = true;
-            gbFinalizar.Enabled = true;
-            gbInicio.Enabled = false;
+            bool correctoh = hInicio >= 0 && hInicio <= 23;
+            if (correctoh==false)
+            {
+                MessageBox.Show("Valor de Hora incorrecta - el valor es de 0 a 23");
+            }
+
+            bool correctom = mInicio >= 0 && mInicio <= 23;
+            if (correctom == false)
+            {
+                MessageBox.Show("Valor de Minutos incorrecto - el valor es de 0 a 59");
+            }
+
+            if (correctoh && correctom)
+            {
+                viaje = new Viaje(hInicio, mInicio, asientos);
+
+                gbParadas.Enabled = true;
+                gbFinalizar.Enabled = true;
+                gbInicio.Enabled = false;
+            }
         }
 
         private void btnIngresadaParada_Click(object sender, EventArgs e)
@@ -43,8 +59,22 @@ namespace Ej2_colectivo
             int ascienden = Convert.ToInt32(tbAscienden.Text);
             int descienden = Convert.ToInt32(tbDescienden.Text);
 
-            if (ascienden - descienden <=viaje.Asientos)
+
+            bool duracionValida =( (hSalidaParada * 60 + mSalidaParada) - (hLLegadaParada * 60 + mLLegadaParada))>0;
+            if (duracionValida ==false)
             {
+                MessageBox.Show("El tiempo de partida debe ser mayor o igual al de llegada");
+            }
+
+            bool ocupacionValida = (viaje.Ocupados + ascienden - descienden)>=0;
+            if(ocupacionValida==false)
+            {
+                MessageBox.Show("Cantidad de asientos incorrecta!");
+            }
+        
+            if (ocupacionValida && duracionValida)
+            {
+                
                 viaje.RealizarParada(hLLegadaParada, mLLegadaParada,
                                     hSalidaParada, mSalidaParada,
                                     ascienden, descienden);
@@ -57,10 +87,6 @@ namespace Ej2_colectivo
 
                 tbAscienden.Clear();
                 tbDescienden.Clear();
-            }
-            else
-            {
-                MessageBox.Show("Superó la cantidad de asientos!");
             }
         }
 

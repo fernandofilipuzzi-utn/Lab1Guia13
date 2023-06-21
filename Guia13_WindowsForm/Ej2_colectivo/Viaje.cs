@@ -8,9 +8,10 @@ namespace Ej2_colectivo
 {
     class Viaje
     {
+        public int Ocupados { get; set; }
         public int PasajerosTrasnportados { get; private set; }
 
-        public int Asientos { get; private set }
+        public int Asientos { get; private set; }
 
         public int demoraEnM;
         public int HDemora 
@@ -70,10 +71,14 @@ namespace Ej2_colectivo
             int LLegadaEnM= 30*hLLegadaParada+mLLegadaParada;
             int SalidaEnM = 30 * hSalidaParada + mSalidaParada;
 
-            demoraEnM = SalidaEnM- LLegadaEnM;
-            CantParadas++;
+           
 
-            PasajerosTrasnportados+= ascienden - descienden;
+            demoraEnM += SalidaEnM - LLegadaEnM;
+            CantParadas++;
+            
+            Ocupados += ascienden - descienden;
+
+            PasajerosTrasnportados += ascienden;
         }
 
         public void Finalizar(int hLLegada,int mLLegada)
