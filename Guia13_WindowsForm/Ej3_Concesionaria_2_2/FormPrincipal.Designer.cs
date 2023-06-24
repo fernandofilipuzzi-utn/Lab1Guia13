@@ -32,7 +32,7 @@ namespace Ej3_Concesionaria_2_2
             this.gbInicio = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnInicio = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAñoActual = new System.Windows.Forms.TextBox();
             this.gbRegistro = new System.Windows.Forms.GroupBox();
             this.gbAltaEmbarque = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace Ej3_Concesionaria_2_2
             // 
             this.gbInicio.Controls.Add(this.label1);
             this.gbInicio.Controls.Add(this.btnInicio);
-            this.gbInicio.Controls.Add(this.textBox1);
+            this.gbInicio.Controls.Add(this.tbAñoActual);
             this.gbInicio.Location = new System.Drawing.Point(12, 12);
             this.gbInicio.Name = "gbInicio";
             this.gbInicio.Size = new System.Drawing.Size(347, 78);
@@ -78,7 +78,7 @@ namespace Ej3_Concesionaria_2_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 36);
+            this.label1.Location = new System.Drawing.Point(59, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace Ej3_Concesionaria_2_2
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(245, 37);
+            this.btnInicio.Location = new System.Drawing.Point(245, 33);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(90, 23);
             this.btnInicio.TabIndex = 1;
@@ -94,13 +94,13 @@ namespace Ej3_Concesionaria_2_2
             this.btnInicio.UseVisualStyleBackColor = true;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // textBox1
+            // tbAñoActual
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "2023";
+            this.tbAñoActual.Location = new System.Drawing.Point(130, 36);
+            this.tbAñoActual.Name = "tbAñoActual";
+            this.tbAñoActual.Size = new System.Drawing.Size(100, 20);
+            this.tbAñoActual.TabIndex = 0;
+            this.tbAñoActual.Text = "2023";
             // 
             // gbRegistro
             // 
@@ -143,7 +143,7 @@ namespace Ej3_Concesionaria_2_2
             this.btnIniciarEmbarque.Location = new System.Drawing.Point(242, 11);
             this.btnIniciarEmbarque.Name = "btnIniciarEmbarque";
             this.btnIniciarEmbarque.Size = new System.Drawing.Size(82, 41);
-            this.btnIniciarEmbarque.TabIndex = 4;
+            this.btnIniciarEmbarque.TabIndex = 3;
             this.btnIniciarEmbarque.Text = "Alta Embarque";
             this.btnIniciarEmbarque.UseVisualStyleBackColor = true;
             this.btnIniciarEmbarque.Click += new System.EventHandler(this.btnIniciarEmbarque_Click);
@@ -153,15 +153,15 @@ namespace Ej3_Concesionaria_2_2
             this.tbNroEmbarque.Location = new System.Drawing.Point(119, 22);
             this.tbNroEmbarque.Name = "tbNroEmbarque";
             this.tbNroEmbarque.Size = new System.Drawing.Size(100, 20);
-            this.tbNroEmbarque.TabIndex = 0;
+            this.tbNroEmbarque.TabIndex = 2;
             // 
             // btnRechazarEmbarque
             // 
             this.btnRechazarEmbarque.Location = new System.Drawing.Point(208, 179);
             this.btnRechazarEmbarque.Name = "btnRechazarEmbarque";
             this.btnRechazarEmbarque.Size = new System.Drawing.Size(75, 40);
-            this.btnRechazarEmbarque.TabIndex = 5;
-            this.btnRechazarEmbarque.Text = "Rechazar Embarque";
+            this.btnRechazarEmbarque.TabIndex = 7;
+            this.btnRechazarEmbarque.Text = "Rechazar";
             this.btnRechazarEmbarque.UseVisualStyleBackColor = true;
             this.btnRechazarEmbarque.Click += new System.EventHandler(this.btnRechazarEmbarque_Click);
             // 
@@ -203,15 +203,14 @@ namespace Ej3_Concesionaria_2_2
             this.tbMontoFabricacion.Location = new System.Drawing.Point(119, 44);
             this.tbMontoFabricacion.Name = "tbMontoFabricacion";
             this.tbMontoFabricacion.Size = new System.Drawing.Size(100, 20);
-            this.tbMontoFabricacion.TabIndex = 3;
+            this.tbMontoFabricacion.TabIndex = 5;
             // 
             // btnIngresarVehiculo
             // 
-            this.btnIngresarVehiculo.Enabled = false;
             this.btnIngresarVehiculo.Location = new System.Drawing.Point(234, 18);
             this.btnIngresarVehiculo.Name = "btnIngresarVehiculo";
             this.btnIngresarVehiculo.Size = new System.Drawing.Size(90, 49);
-            this.btnIngresarVehiculo.TabIndex = 1;
+            this.btnIngresarVehiculo.TabIndex = 6;
             this.btnIngresarVehiculo.Text = "Ingresar Vehiculo";
             this.btnIngresarVehiculo.UseVisualStyleBackColor = true;
             this.btnIngresarVehiculo.Click += new System.EventHandler(this.btnIngresarVehiculo_Click);
@@ -221,15 +220,15 @@ namespace Ej3_Concesionaria_2_2
             this.tbAñoFabricacion.Location = new System.Drawing.Point(119, 19);
             this.tbAñoFabricacion.Name = "tbAñoFabricacion";
             this.tbAñoFabricacion.Size = new System.Drawing.Size(100, 20);
-            this.tbAñoFabricacion.TabIndex = 0;
+            this.tbAñoFabricacion.TabIndex = 4;
             // 
             // btnIngresarEmbarque
             // 
             this.btnIngresarEmbarque.Location = new System.Drawing.Point(81, 179);
             this.btnIngresarEmbarque.Name = "btnIngresarEmbarque";
             this.btnIngresarEmbarque.Size = new System.Drawing.Size(77, 40);
-            this.btnIngresarEmbarque.TabIndex = 1;
-            this.btnIngresarEmbarque.Text = "Ingresar Embarque";
+            this.btnIngresarEmbarque.TabIndex = 8;
+            this.btnIngresarEmbarque.Text = "Aceptar";
             this.btnIngresarEmbarque.UseVisualStyleBackColor = true;
             this.btnIngresarEmbarque.Click += new System.EventHandler(this.btnIngresarEmbarque_Click);
             // 
@@ -243,17 +242,17 @@ namespace Ej3_Concesionaria_2_2
             this.gbInforme.Enabled = false;
             this.gbInforme.Location = new System.Drawing.Point(365, 12);
             this.gbInforme.Name = "gbInforme";
-            this.gbInforme.Size = new System.Drawing.Size(417, 308);
+            this.gbInforme.Size = new System.Drawing.Size(546, 308);
             this.gbInforme.TabIndex = 2;
             this.gbInforme.TabStop = false;
             this.gbInforme.Text = "Informe";
             // 
             // btnListadoEmbarques
             // 
-            this.btnListadoEmbarques.Location = new System.Drawing.Point(336, 179);
+            this.btnListadoEmbarques.Location = new System.Drawing.Point(465, 169);
             this.btnListadoEmbarques.Name = "btnListadoEmbarques";
             this.btnListadoEmbarques.Size = new System.Drawing.Size(75, 36);
-            this.btnListadoEmbarques.TabIndex = 6;
+            this.btnListadoEmbarques.TabIndex = 14;
             this.btnListadoEmbarques.Text = "Todos los embarues";
             this.btnListadoEmbarques.UseVisualStyleBackColor = true;
             this.btnListadoEmbarques.Click += new System.EventHandler(this.btnListadoEmbarques_Click);
@@ -263,9 +262,9 @@ namespace Ej3_Concesionaria_2_2
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.btnEmbarquePorNumero);
             this.groupBox5.Controls.Add(this.tbNumeroEmbBusq);
-            this.groupBox5.Location = new System.Drawing.Point(15, 19);
+            this.groupBox5.Location = new System.Drawing.Point(6, 19);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(396, 56);
+            this.groupBox5.Size = new System.Drawing.Size(534, 56);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ver Embarque";
@@ -281,10 +280,10 @@ namespace Ej3_Concesionaria_2_2
             // 
             // btnEmbarquePorNumero
             // 
-            this.btnEmbarquePorNumero.Location = new System.Drawing.Point(240, 19);
+            this.btnEmbarquePorNumero.Location = new System.Drawing.Point(369, 15);
             this.btnEmbarquePorNumero.Name = "btnEmbarquePorNumero";
             this.btnEmbarquePorNumero.Size = new System.Drawing.Size(150, 31);
-            this.btnEmbarquePorNumero.TabIndex = 1;
+            this.btnEmbarquePorNumero.TabIndex = 10;
             this.btnEmbarquePorNumero.Text = "Buscar Embarque";
             this.btnEmbarquePorNumero.UseVisualStyleBackColor = true;
             this.btnEmbarquePorNumero.Click += new System.EventHandler(this.btnEmbarquePorNumero_Click);
@@ -293,33 +292,35 @@ namespace Ej3_Concesionaria_2_2
             // 
             this.tbNumeroEmbBusq.Location = new System.Drawing.Point(117, 21);
             this.tbNumeroEmbBusq.Name = "tbNumeroEmbBusq";
-            this.tbNumeroEmbBusq.Size = new System.Drawing.Size(100, 20);
-            this.tbNumeroEmbBusq.TabIndex = 0;
+            this.tbNumeroEmbBusq.Size = new System.Drawing.Size(231, 20);
+            this.tbNumeroEmbBusq.TabIndex = 9;
             // 
             // btnEmbarqueMayor
             // 
-            this.btnEmbarqueMayor.Location = new System.Drawing.Point(336, 136);
+            this.btnEmbarqueMayor.Location = new System.Drawing.Point(465, 126);
             this.btnEmbarqueMayor.Name = "btnEmbarqueMayor";
             this.btnEmbarqueMayor.Size = new System.Drawing.Size(75, 36);
-            this.btnEmbarqueMayor.TabIndex = 4;
+            this.btnEmbarqueMayor.TabIndex = 13;
             this.btnEmbarqueMayor.Text = "Embarque Mayor";
             this.btnEmbarqueMayor.UseVisualStyleBackColor = true;
             this.btnEmbarqueMayor.Click += new System.EventHandler(this.btnEmbarqueMayor_Click);
             // 
             // ltbInforme
             // 
+            this.ltbInforme.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltbInforme.FormattingEnabled = true;
-            this.ltbInforme.Location = new System.Drawing.Point(15, 94);
+            this.ltbInforme.ItemHeight = 16;
+            this.ltbInforme.Location = new System.Drawing.Point(6, 84);
             this.ltbInforme.Name = "ltbInforme";
-            this.ltbInforme.Size = new System.Drawing.Size(315, 199);
-            this.ltbInforme.TabIndex = 3;
+            this.ltbInforme.Size = new System.Drawing.Size(453, 212);
+            this.ltbInforme.TabIndex = 11;
             // 
             // btnRecaudacion
             // 
-            this.btnRecaudacion.Location = new System.Drawing.Point(336, 94);
+            this.btnRecaudacion.Location = new System.Drawing.Point(465, 84);
             this.btnRecaudacion.Name = "btnRecaudacion";
             this.btnRecaudacion.Size = new System.Drawing.Size(75, 36);
-            this.btnRecaudacion.TabIndex = 1;
+            this.btnRecaudacion.TabIndex = 12;
             this.btnRecaudacion.Text = "Resumen del día";
             this.btnRecaudacion.UseVisualStyleBackColor = true;
             this.btnRecaudacion.Click += new System.EventHandler(this.btnRecaudacion_Click);
@@ -328,7 +329,7 @@ namespace Ej3_Concesionaria_2_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 327);
+            this.ClientSize = new System.Drawing.Size(923, 327);
             this.Controls.Add(this.gbInforme);
             this.Controls.Add(this.gbRegistro);
             this.Controls.Add(this.gbInicio);
@@ -353,7 +354,7 @@ namespace Ej3_Concesionaria_2_2
 
         private System.Windows.Forms.GroupBox gbInicio;
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAñoActual;
         private System.Windows.Forms.GroupBox gbRegistro;
         private System.Windows.Forms.Button btnIniciarEmbarque;
         private System.Windows.Forms.GroupBox gbVehiculo;

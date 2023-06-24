@@ -28,7 +28,7 @@ namespace Ej3_Concesionaria_2_2
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            int añoActual = Convert.ToInt32(textBox1.Text);
+            int añoActual = Convert.ToInt32(tbAñoActual.Text);
             c = new Concesionaria(añoActual);
 
             #region controlando el flujo de carga de datos
@@ -49,6 +49,7 @@ namespace Ej3_Concesionaria_2_2
             #region controlando el flujo de carga de datos
             gbVehiculo.Enabled = true;
             gbAltaEmbarque.Enabled = false;
+            gbVehiculo.Enabled = true;
             #endregion
         }
 
@@ -74,6 +75,7 @@ namespace Ej3_Concesionaria_2_2
             #region controlando el flujo de carga de datos
             gbAltaEmbarque.Enabled = true;
             tbNroEmbarque.Clear();
+            gbVehiculo.Enabled = false;
             #endregion
         }
 
@@ -106,13 +108,13 @@ namespace Ej3_Concesionaria_2_2
             Embarque emb = c.MayorCantidadMotos;
             if (emb != null)
             {
-                ltbInforme.Items.Add($"Numero de embarque: {emb.Numero}"));
-                ltbInforme.Items.Add($"Promedio de costo por moto: $ {emb.PromedioCosto:f2}"));
-                ltbInforme.Items.Add($"Monto Total del embarque: $ {emb.MontoTotal}"));
+                ltbInforme.Items.Add($"Numero de embarque: {emb.Numero}");
+                ltbInforme.Items.Add($"Promedio de costo por moto: $ {emb.PromedioCosto:f2}");
+                ltbInforme.Items.Add($"Monto Total del embarque: $ {emb.MontoTotal}");
             }
             else
             {
-                ltbInforme.Items.Add($"No se han registrado embarques."));
+                ltbInforme.Items.Add($"No se han registrado embarques.");
             };
         }
 

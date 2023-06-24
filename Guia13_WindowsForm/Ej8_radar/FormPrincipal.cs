@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Radar
+namespace Ej8_radar
 {
     public partial class FormPrincipal : Form
     {
@@ -18,30 +18,39 @@ namespace Radar
         {
             InitializeComponent();
 
+            
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            #region pre inicialización inicialización
             control.AgregarControl("OXD456", 30, false);
             control.AgregarControl("OXD457", 30, false);
             control.AgregarControl("OXD110", 30, false);
             control.AgregarControl("OXD477", 120, false);
             control.AgregarControl("OXD557", 100, false);
             btnListarInfractores.PerformClick();
+            #endregion
         }
 
         private void btnAgregarVehiculo_Click(object sender, EventArgs e)
         {
-            FormVehiculo fControl = new FormVehiculo();
+            string patente = tbPatente.Text;
+            double velocidad = Convert.ToDouble(tbVelocidad.Text);
+            bool esOficial = rbEsOficial.Checked;
+            control.AgregarControl(patente, velocidad, esOficial);
 
-            if (fControl.ShowDialog() == DialogResult.OK)
-            {
-                string patente=fControl.tbPatente.Text;
-                double velocidad = Convert.ToDouble( fControl.tbPatente.Text);
-                bool esOficial = fControl.rbEsOficial.Checked;
-                control.AgregarControl(patente, velocidad, esOficial);
-            }
+            #region limpieza de controles
+            tbPatente.Clear();
+            tbVelocidad.Clear();
+            rbEsOficial.Checked = false;
+            rbEsCivil.Checked = false;
+            #endregion
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnBuscarInfractor_Click(object sender, EventArgs e)
         {
-            string patente = tbPatente.Text;
+            string patente = tbPatenteBuscar.Text;
 
             control.Ordenar();
             Vehiculo controlado=control.BuscarPorPatente(patente);
@@ -61,5 +70,6 @@ namespace Radar
             for(int n=0;n<control.CantidadVehiculo;n++)
                 lbtInforme.Items.Add($"{control.VerVehiculosInfractores(n).Patente}");
         }
+        
     }
 }
