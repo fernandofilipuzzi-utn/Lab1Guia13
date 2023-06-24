@@ -92,7 +92,6 @@ namespace Ej3_Concesionaria_2_2
         private void btnRecaudacion_Click(object sender, EventArgs e)
         {
             ltbInforme.Items.Clear();
-
             ltbInforme.Items.Add("\t\t Informe de resultados");
             ltbInforme.Items.Add("");
             ltbInforme.Items.Add(string.Format("Monto de todos los embarques : ${0:f2}", c.ImporteEnEmbarques));
@@ -103,9 +102,10 @@ namespace Ej3_Concesionaria_2_2
         {
             ltbInforme.Items.Clear();
 
-            ltbInforme.Items.Add("\t\tEmbarque con mayor cantidad de motos\n");
-
             Embarque emb = c.MayorCantidadMotos;
+
+            #region actualización listbox
+            ltbInforme.Items.Add("\t\tEmbarque con mayor cantidad de motos\n");
             if (emb != null)
             {
                 ltbInforme.Items.Add($"Numero de embarque: {emb.Numero}");
@@ -116,6 +116,7 @@ namespace Ej3_Concesionaria_2_2
             {
                 ltbInforme.Items.Add($"No se han registrado embarques.");
             };
+            #endregion
         }
 
         private void btnEmbarquePorNumero_Click(object sender, EventArgs e)
@@ -124,7 +125,7 @@ namespace Ej3_Concesionaria_2_2
 
             Embarque buscado = c.VerEmbarquePorNumero(numeroEmbarque);
 
-
+            #region actualización listbox
             ltbInforme.Items.Clear();
             ltbInforme.Items.Add($"{"Numero",10} {"Cant. de Motos",-20} {"MontoTotal",20}");
             ltbInforme.Items.Add("------------------------------------------------------------");
@@ -136,6 +137,7 @@ namespace Ej3_Concesionaria_2_2
             {
                 ltbInforme.Items.Add($"No existe el embarque con  número: {numeroEmbarque}");
             }
+            #endregion
         }
 
         private void btnListadoEmbarques_Click(object sender, EventArgs e)
@@ -143,6 +145,7 @@ namespace Ej3_Concesionaria_2_2
             ltbInforme.Items.Clear();
             ltbInforme.Items.Add("\t\tListado de embarques ordenados\n");
 
+            #region actualización listbox
             if (c.CantidadEmbarques > 0)
             {
                 Embarque[] embs = c.ListaOrdenadaEmbarques();
@@ -158,6 +161,7 @@ namespace Ej3_Concesionaria_2_2
             {
                 ltbInforme.Items.Add($"No existe se han registrados embarques.\n");
             }
+            #endregion
         }
     }
 }
