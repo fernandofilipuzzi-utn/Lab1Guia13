@@ -215,26 +215,26 @@ namespace Ej2_colectivo
             this.tbAscienden.TabIndex = 5;
             this.tbAscienden.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
             // 
-            // tbMSalida
+            // tbMSalidaParada
             // 
             this.tbMSalidaParada.Location = new System.Drawing.Point(170, 50);
-            this.tbMSalidaParada.Name = "tbMSalida";
+            this.tbMSalidaParada.Name = "tbMSalidaParada";
             this.tbMSalidaParada.Size = new System.Drawing.Size(37, 20);
             this.tbMSalidaParada.TabIndex = 8;
             this.tbMSalidaParada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
             // 
-            // tbHLLegada
+            // tbHLLegadaParada
             // 
             this.tbHLLegadaParada.Location = new System.Drawing.Point(111, 19);
-            this.tbHLLegadaParada.Name = "tbHLLegada";
+            this.tbHLLegadaParada.Name = "tbHLLegadaParada";
             this.tbHLLegadaParada.Size = new System.Drawing.Size(37, 20);
             this.tbHLLegadaParada.TabIndex = 5;
             this.tbHLLegadaParada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
             // 
-            // tbHSalida
+            // tbHSalidaParada
             // 
             this.tbHSalidaParada.Location = new System.Drawing.Point(111, 50);
-            this.tbHSalidaParada.Name = "tbHSalida";
+            this.tbHSalidaParada.Name = "tbHSalidaParada";
             this.tbHSalidaParada.Size = new System.Drawing.Size(37, 20);
             this.tbHSalidaParada.TabIndex = 7;
             this.tbHSalidaParada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
@@ -248,10 +248,10 @@ namespace Ej2_colectivo
             this.label4.TabIndex = 6;
             this.label4.Text = "Salida (HH:MM)";
             // 
-            // tbMLLegada
+            // tbMLLegadaParada
             // 
             this.tbMLLegadaParada.Location = new System.Drawing.Point(170, 19);
-            this.tbMLLegadaParada.Name = "tbMLLegada";
+            this.tbMLLegadaParada.Name = "tbMLLegadaParada";
             this.tbMLLegadaParada.Size = new System.Drawing.Size(37, 20);
             this.tbMLLegadaParada.TabIndex = 5;
             this.tbMLLegadaParada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
@@ -301,18 +301,18 @@ namespace Ej2_colectivo
             this.label11.TabIndex = 13;
             this.label11.Text = ":";
             // 
-            // textBox11
+            // tbMLLegada
             // 
             this.tbMLLegada.Location = new System.Drawing.Point(220, 19);
-            this.tbMLLegada.Name = "textBox11";
+            this.tbMLLegada.Name = "tbMLLegada";
             this.tbMLLegada.Size = new System.Drawing.Size(37, 20);
             this.tbMLLegada.TabIndex = 11;
             this.tbMLLegada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
             // 
-            // textBox10
+            // tbHLLegada
             // 
             this.tbHLLegada.Location = new System.Drawing.Point(161, 19);
-            this.tbHLLegada.Name = "textBox10";
+            this.tbHLLegada.Name = "tbHLLegada";
             this.tbHLLegada.Size = new System.Drawing.Size(37, 20);
             this.tbHLLegada.TabIndex = 12;
             this.tbHLLegada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPositivo_KeyPress);
@@ -353,7 +353,7 @@ namespace Ej2_colectivo
             this.Controls.Add(this.gbParadas);
             this.Controls.Add(this.gbInicio);
             this.Name = "FormPrincipal";
-            this.Text = "Form1";
+            this.Text = "Empresa de viajes";
             this.gbInicio.ResumeLayout(false);
             this.gbInicio.PerformLayout();
             this.gbParadas.ResumeLayout(false);
