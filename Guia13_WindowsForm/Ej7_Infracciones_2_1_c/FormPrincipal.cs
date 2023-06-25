@@ -35,6 +35,7 @@ namespace Ej7_Infracciones_2_1_c
             }
 
             #region 
+            gbInicioSistema.Enabled = false;
             gbActa.Enabled = true;
             #endregion
         }

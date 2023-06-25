@@ -29,7 +29,7 @@ namespace Ej7_Infracciones_2_1_c
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbInicioSistema = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIniciarSistema = new System.Windows.Forms.Button();
             this.tbBaseMonetaria = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@ namespace Ej7_Infracciones_2_1_c
             this.btnMayorMonto = new System.Windows.Forms.Button();
             this.lbxInforme = new System.Windows.Forms.ListBox();
             this.btnRecaudacion = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.gbInicioSistema.SuspendLayout();
             this.gbActa.SuspendLayout();
             this.gbPago.SuspendLayout();
             this.gbTipoInfraccion.SuspendLayout();
@@ -64,18 +64,18 @@ namespace Ej7_Infracciones_2_1_c
             this.gbInformes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbInicioSistema
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnIniciarSistema);
-            this.groupBox1.Controls.Add(this.tbBaseMonetaria);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(400, 71);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inicio del Sistema";
+            this.gbInicioSistema.Controls.Add(this.label3);
+            this.gbInicioSistema.Controls.Add(this.btnIniciarSistema);
+            this.gbInicioSistema.Controls.Add(this.tbBaseMonetaria);
+            this.gbInicioSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbInicioSistema.Location = new System.Drawing.Point(12, 12);
+            this.gbInicioSistema.Name = "gbInicioSistema";
+            this.gbInicioSistema.Size = new System.Drawing.Size(400, 71);
+            this.gbInicioSistema.TabIndex = 0;
+            this.gbInicioSistema.TabStop = false;
+            this.gbInicioSistema.Text = "Inicio del Sistema";
             // 
             // label3
             // 
@@ -342,12 +342,12 @@ namespace Ej7_Infracciones_2_1_c
             this.ClientSize = new System.Drawing.Size(798, 500);
             this.Controls.Add(this.gbInformes);
             this.Controls.Add(this.gbActa);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbInicioSistema);
             this.Name = "FormPrincipal";
             this.Text = "Sistema de infracciones";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbInicioSistema.ResumeLayout(false);
+            this.gbInicioSistema.PerformLayout();
             this.gbActa.ResumeLayout(false);
             this.gbPago.ResumeLayout(false);
             this.gbPago.PerformLayout();
@@ -363,7 +363,7 @@ namespace Ej7_Infracciones_2_1_c
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbInicioSistema;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIniciarSistema;
         private System.Windows.Forms.TextBox tbBaseMonetaria;
