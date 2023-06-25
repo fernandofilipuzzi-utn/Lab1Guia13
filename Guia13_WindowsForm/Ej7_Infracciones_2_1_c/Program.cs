@@ -16,7 +16,7 @@ namespace Ej7_Infracciones_2_1_c
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormPrincipal());
         }
     }
 }

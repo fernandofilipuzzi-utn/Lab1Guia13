@@ -60,7 +60,7 @@
 <XPD:ATTR name="Left" type="integer">392</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">148</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">238</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">147</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">160</XPD:ATTR>
 <XPD:REF name="Model">lB7lOr1Hb0atFzNsF4LaOQAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="MLJQO+MGyUiuzQ2YcKJunAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="yyP0OdCrB0OasNqcqOV6iwAA">
@@ -150,7 +150,7 @@
 <XPD:OBJ name="OwnedViews[3]" type="UMLAssociationView" guid="+zj7NHCPUUqgzSJ+zBxJ1gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">776,263;629,240</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">776,265;629,244</XPD:ATTR>
 <XPD:REF name="Model">BJ7bLZim9EqtCwnuRIEiIQAA</XPD:REF>
 <XPD:REF name="Head">EJ6oAE2dzEmPf98sJouSdAAA</XPD:REF>
 <XPD:REF name="Tail">4uyWw8jAqU2SyHV2Wl+FvwAA</XPD:REF>
@@ -234,7 +234,7 @@
 <XPD:OBJ name="OwnedViews[4]" type="UMLAssociationView" guid="8oAX8NlrQkKJPbR/ZLIj0gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">541,368;525,294</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">541,368;528,307</XPD:ATTR>
 <XPD:REF name="Model">kW4/dFKIs0SQd5vq+B1EogAA</XPD:REF>
 <XPD:REF name="Head">EJ6oAE2dzEmPf98sJouSdAAA</XPD:REF>
 <XPD:REF name="Tail">QfnJQowmKEWPi2j4CqeXbwAA</XPD:REF>
@@ -278,8 +278,8 @@
 <XPD:REF name="Model">yCx96/vsDk24kbDWlN05OgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="RUiIbA6urUK0pSfYmyI+EQAA">
-<XPD:ATTR name="Alpha" type="real">-0,523598775598299</XPD:ATTR>
-<XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">5,34039564326755</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">13,4536240470737</XPD:ATTR>
 <XPD:ATTR name="EdgePosition" type="EdgePositionKind">epTail</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">*</XPD:ATTR>
 <XPD:REF name="Model">e8kDQNBStUa/vIicmCSO/gAA</XPD:REF>
@@ -385,7 +385,7 @@
 <XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
 <XPD:REF name="Associations[0]">g402QdttCEi9GdX6x+7TaQAA</XPD:REF>
 <XPD:REF name="Associations[1]">yCx96/vsDk24kbDWlN05OgAA</XPD:REF>
-<XPD:ATTR name="#Attributes" type="integer">4</XPD:ATTR>
+<XPD:ATTR name="#Attributes" type="integer">5</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="dmqQ51FPUEi9rvjS26VArAAA">
 <XPD:ATTR name="Name" type="string">BaseMonetaria</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">readonly</XPD:ATTR>
@@ -407,6 +407,12 @@
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[3]" type="UMLAttribute" guid="gQNXabueuEm+HQUX7VB9RgAA">
 <XPD:ATTR name="Name" type="string">CantActasRevsiar</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">readonly</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="Owner">lB7lOr1Hb0atFzNsF4LaOQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Attributes[4]" type="UMLAttribute" guid="8JLBlGchFka4MvNlM3SftgAA">
+<XPD:ATTR name="Name" type="string">CantInfracciones</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">readonly</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="Owner">lB7lOr1Hb0atFzNsF4LaOQAA</XPD:REF>
@@ -471,9 +477,9 @@
 <XPD:ATTR name="Name" type="string">VerTicket</XPD:ATTR>
 <XPD:REF name="Owner">BJCLzNQBZ0aFT/pYWNV1fgAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="ntnNDutHtEmmzUXYrn4ALwAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="ZMIG+D/xZka7E6ylT+jSfgAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">string;</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">string[];</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">GOjaYSAsJ0+Z/CvkBFmDZgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>

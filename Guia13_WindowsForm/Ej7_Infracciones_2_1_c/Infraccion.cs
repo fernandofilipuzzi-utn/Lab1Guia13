@@ -8,7 +8,6 @@ namespace Ej7_Infracciones_2_1_c
 {
     class Infraccion
     {
-        
         public int Codigo { get; private set; }
         public string Descripcion { get; private set; }
         public int Uds { get; private set; }
